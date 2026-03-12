@@ -114,11 +114,12 @@ nav li{
 
 .subProd{
     width: 20%;
-    box-shadow: 0px 0px 0px 0px;
+    box-shadow: 5px 5px 20px 2px;
     align-items: center;
     display: flex;
     justify-content: center;
     text-align: center;
+    border-radius: 25px;
 }
 
 .subProd img{
@@ -129,4 +130,11 @@ nav li{
 .link{
     text-decoration: none;
     color: rgba(0, 0, 0, 0.699);
+}
+
+/* Video */
+
+.video{
+    text-align: center;
+    background: linear-gradient(#6b90aa, #001B2E)
 }
