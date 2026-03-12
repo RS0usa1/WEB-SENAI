@@ -82,7 +82,7 @@ nav li{
 /*Estilização da sessão NOSSO ESTABELECIMENTO*/
 .mapa{
     text-align: center;
-    background: linear-gradient(white, #001B2E);
+    background: linear-gradient(white, #8ea0ad);
 }
 
 .Produtos{
@@ -91,6 +91,8 @@ nav li{
     height: 70%;
     display: flex;
     justify-content: center;
+    text-align: center;
+    background: linear-gradient(#8ea0ad, #6b90aa); /*#001B2E*/
 }
 
 .subProdutos{
@@ -117,7 +119,6 @@ nav li{
     display: flex;
     justify-content: center;
     text-align: center;
-    border: 1px solid;
 }
 
 .subProd img{
@@ -125,6 +126,7 @@ nav li{
     height: 200px;
 }
 
-.legenda{
-
+.link{
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.699);
 }
