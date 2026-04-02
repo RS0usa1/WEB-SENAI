@@ -1,0 +1,123 @@
+/* Fonte da página */
+@import url('https://fonts.googleapis.com/css2?family=Felipa&family=Google+Sans+Code:ital,wght@0,300..800;1,300..800&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Estilização padrão da pagina */
+body{
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+/* Estilização do Header da página */
+header{
+    background-color: #141823;
+    padding: 20px 0 40px 0;
+}
+
+.divHeader{
+    position: relative;
+}
+
+.logo{
+    width: 12%;
+    padding-left: 8%;
+}
+
+nav{
+    position: absolute;
+    color: white;
+    top: 28%;
+    font-size: 25;
+    right: 8%;
+}
+
+nav li{
+    display: inline;
+    margin-right: 100px;
+}
+
+.produtos-titulo{
+    display: flex;
+    align-items: center;
+    font-size: 40px;
+    font-weight: bold;
+    list-style: none;
+}
+
+.produtos-titulo img{
+    width: 50px;
+    margin-right: 20px;
+}
+
+.Produtos{
+    width: 100%;
+    align-items: center;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.subProdutos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    height: 90%;
+    margin: 10px;
+}
+
+.Prod{
+    width: 100%;
+    height: 35%;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+}
+
+.subProd{
+    width: 20%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    border-radius: 25px;
+}
+
+.legenda{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.preço{
+    color: rgb(71, 161, 71);
+    font-weight: bold;
+}
+
+/* FOOTER */
+footer{
+    padding: 30px 10px 10px 0;
+    background: url("../img/footer.jpg");
+    background-size: cover;
+    background-position: center;
+    background-color: black(0,0,0,0.6);
+    background-blend-mode: darken;
+}
+
+footer p{
+    color: white;
+    text-align: right;
+    font-size: 20px;
+}
+
+footer a{
+    color: white;
+    text-decoration: none;
+}
+
+.logo_footer{
+    width: 15%;
+    padding-left: 85%;
+}
+
