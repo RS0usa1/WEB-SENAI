@@ -7,6 +7,12 @@
     <title>CodeBank</title>
     <script>
         alert("Conheça nossos serviços!")
+
+        function abrirDetalhes(nome, imagem, descricao){
+
+            url=`pop_produtos.html?nomeProdutos=${encodeURIComponent(nome)}&imgProduto${encodeURIComponent(imagem)}&imgProduto=${encodeURIComponent(descricao)}`;
+            window.open(url, "_blank", "widht=800,height=700")
+        }
     </script>
 </head>
 <body>
@@ -140,7 +146,11 @@
                                 </div>
                             </div>        
                         </div>
-                        <div class="subProd">
+                        <script>
+                            //Descrição do Produto
+                            desc_produto="Este é um dos nossos tenis que está disponivel para venda no BancoDigital. Nova geração de amortecimento de mola com uma camada extra de proteção na sola do tenis. Com ele é possível realizar atividades fisícas, ir trabalhar e até para ocasiões mais refinadas."
+                        </script>
+                        <div class="subProd" onclick="abrirDetalhes('Tenis Nike Initiator', '../img/nike.webp', desc_produto)">
                             <img width="300px" height="300px" src="../img/nike.webp" alt="Nike">
                             <div class="legenda">
                                 <div class="titulo">

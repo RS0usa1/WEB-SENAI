@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/pop_produtos.css">
+    <title>Document</title>
+</head>
+<body>
+    <section class="pagina_prod">
+        <div class="Card">
+            <h1 id="nome-produto">Tenis Nike Initiator</h1>
+        </div>
+        <div class="Card">
+            <img id="img-produto" src="../img/nike.webp">
+        </div>
+        <div id="desc-produto" class="Card">
+            <p>Este é um dos nossos tenis que está disponivel para venda no BancoDigital. Nova geração de amortecimento de mola com uma camada extra de proteção na sola do tenis. Com ele é possível realizar atividades fisícas, ir trabalhar e até para ocasiões mais refinadas.</p>
+        </div>
+
+        <!--Captura as informações do parâmetro-->
+        <script>
+            //Função para capturar os parâmetros da POP
+            function getParametro(infoCapturar){
+                urlParametro=new URLSearchParams(window.location.search);
+                return urlParametro.ger(infoCapturar);
+            }
+
+            //Preenche as informações no layout
+            document.getElementById("nome-produto").textContent = getParametro("nomeProduto");
+            document.getElementById("img-produto").src = getParametro("imgProduto");
+            document.getElementById("desc-produto").textContent = getParametro("descProduto");
+        </script>
+    </section>
+</body>
+</html>

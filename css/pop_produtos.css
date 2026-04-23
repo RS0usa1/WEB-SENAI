@@ -1,0 +1,35 @@
+/* Fonte da página */
+@import url('https://fonts.googleapis.com/css2?family=Felipa&family=Google+Sans+Code:ital,wght@0,300..800;1,300..800&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Estilização padrão da pagina */
+body{
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+section{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.Card{
+    width: 100%;
+    display: flex;
+    object-position: center;
+    justify-content: center;
+    text-align: left;
+}
+
+.pagina_prod img {
+    width: 700px;
+    height: 680px;
+    padding: 20px;
+}
+
+.pagina_prod p{
+    font-size: 20px;
+    padding: 10px;
+    width: 80%;
+    margin: 0;
+}
