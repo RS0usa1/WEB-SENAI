@@ -6,11 +6,11 @@
     <link rel="stylesheet" href="../css/catalogo.css">
     <title>CodeBank</title>
     <script>
-        alert("Conheça nossos serviços!")
+        alert("Conheça nosso catalogo de produtos!")
 
         function abrirDetalhes(nome, imagem, descricao){
-
-            url=`pop_produtos.html?nomeProduto=${encodeURIComponent(nome)}&imgProduto${encodeURIComponent(imagem)}&descProduto=${encodeURIComponent(descricao)}`;
+            
+            url=`pop_produtos.html?nomeProduto=${encodeURIComponent(nome)}&imgProduto=${encodeURIComponent(imagem)}&descProduto=${encodeURIComponent(descricao)}`;
             window.open(url, "_blank", "widht=800,height=700")
         }
     </script>
@@ -23,8 +23,8 @@
                 <nav>
                     <!--Lista de itens do menu-->
                     <ul>
-                        <li>Home</li>
-                        <li><a href="../telas/catalogo.html">Catálogo</a></li>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="./catalogo.html">Catálogo</a></li>
                         <li>Sobre</li>
                     </ul>
                 </nav>
@@ -125,7 +125,7 @@
                     </div>
                     <div class="Prod">
                         <div class="subProd">
-                            <img width="150px" height="15 0px" src="../img/relogio.jpg" alt="Relógio">
+                            <img width="150px" height="150px" src="../img/relogio.jpg" alt="Relógio">
                             <div class="legenda">
                                 <div class="titulo">
                                     <p>Apple Watch Series 8</p>
@@ -149,8 +149,9 @@
                         <script>
                             //Descrição do Produto
                             desc_produto="Este é um dos nossos tenis que está disponivel para venda no BancoDigital. Nova geração de amortecimento de mola com uma camada extra de proteção na sola do tenis. Com ele é possível realizar atividades fisícas, ir trabalhar e até para ocasiões mais refinadas."
+                            slider = ['../img/nike.webp', '../img/teclado.jpg', '../img/micro-ondas.webp', '../img/mochila.jpg', '../img/mouse.jpg'];
                         </script>
-                        <div class="subProd" onclick="abrirDetalhes('Tenis Nike Initiator', '../img/nike.webp', desc_produto)">
+                        <div class="subProd" onclick="abrirDetalhes('Tenis Nike Initiator', slider, desc_produto)">
                             <img width="300px" height="300px" src="../img/nike.webp" alt="Nike">
                             <div class="legenda">
                                 <div class="titulo">
