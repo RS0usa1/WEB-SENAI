@@ -5,67 +5,73 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/contato.css">
-    <title>Document</title>
+    <title>Contato</title>
 </head>
 <body>
     <header>
         <div class="divHeader">
-            <img class="logo" src="../img/logo.png"/>
+            <img class="logo" src="../img/global/carrossel.avif"/>
             <!--Barra de navegação-->
             <nav>
                 <!--Lista de itens do menu-->
                 <ul>
-                    <li><a href="./index.html">Home</a></li>
-                    <li><a href="./telas/catalogo.html">Catálogo</a></li>
-                    <li>Sobre</li>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="./catalogo.html">Catálogo</a></li>
+                    <li><a href="./contato.html">Contato</a></li>
                 </ul>
             </nav>
         </div>
     </header>  
     <main>
         <section>
-            <div>
-                <h1>Entre em Contato</h1>
-                <form action="">
+            <div id="formRetorno" class="divRetorno">
+                <p id="textoRetorno" class="texto-contato"></p>
+            </div>
+            <div id="formulario">
+                <ul class="contato-titulo">
+                    <h1>Entre em Contato</h1>
+                </ul>
+                <form id="frmContato">
                     <fieldset>
-                        <label for="name">Nome:</label>
-                        <input type="text" id="nome" class="input-padrao" required>
+                        <label for="name">Nome Completo:</label>
+                        <input type="text" id="nome" name="" class="input-padrao" required>
 
                         <label for="email">Email:</label>
-                        <input type="text" id="email" class="input-padrao" placeholder="exemplo@gmail.com" required>
+                        <input type="email" id="email" name="" class="input-padrao" placeholder="exemplo@gmail.com" required>
 
                         <label for="telefone">Telefone:</label>
-                        <input type="tel" id="telefone" class="input-padrao" placeholder="(11) 12345-6789" required>
+                        <input type="tel" id="telefone" name="" class="input-padrao" placeholder="(11) 12345-6789" required>
 
                         <label for="texto">Mensagem:</label>
                         <textarea cols="70" rows="10" id="mensagem" class="input-padrao" placeholder="Digite sua mensagem aqui..." required></textarea>
 
-                        <label for="">Como prefere entrar em contato?
+                        <label class="cont">Como prefere entrar em contato? <br>
                             <input type="radio" value="radio-email" name="Contato"> Email
                             <input type="radio" value="radio-telefone" name="Contato"> Telefone
                             <input type="radio" value="radio-whatsapp" name="Contato"> WhatsApp
                         </label>
                         <br>
-                        <label for="">Qual o motivo do contato?
-                            <select name="" id="">
-                                <option value="" disabled selected>Selecionar</option>
-                                <option value="">Dúvida</option>
-                                <option value="">Sugestão</option>
-                                <option value="">Elogio</option>
-                                <option value="">Reclamação</option>
+                        <label>Qual o motivo do contato?
+                            <select>
+                                <option disabled selected>Selecionar</option>
+                                <option>Dúvida</option>
+                                <option>Sugestão</option>
+                                <option>Elogio</option>
+                                <option>Reclamação</option>
                             </select>
                         </label>
+                        <br>
                     </fieldset>
 
-                    <label for=""><input type="checkbox" class="chk">Gostaria de receber novidades por e-mail?</label>
+                    <label><input type="checkbox" class="chk">Gostaria de receber novidades por e-mail?</label>
 
-                    <button type="submit">Enviar Mensagem</button>
+                    <input type="submit" id="enviar" value="Enviar formulario" class="enviar">
                 </form>
             </div>
         </section>
     </main>
     <footer>
-        <img src="./img/image.png" title="BancoDigital" class="logo_footer">
+        <img src="../img/produtos/mochila.jpg" title="BancoDigital" class="logo_footer">
         <p>Entre em contato com o nosso suporte: 
             <a href="https://wa.me/5511123456789" target="_blank">
                 <i class="fa fa-whatsapp"></i>(11) 12345-6789
@@ -75,5 +81,6 @@
             </a>
         </p> 
     </footer>
+    <script src="../js/form.js"></script>
 </body>
 </html>
