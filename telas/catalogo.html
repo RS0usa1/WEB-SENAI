@@ -4,15 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/catalogo.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/footer.css">
     <title>CodeBank</title>
     <script>
         alert("Conheça nosso catalogo de produtos!")
-
-        function abrirDetalhes(nome, imagem, descricao){
             
-            url=`pop_produtos.html?nomeProduto=${encodeURIComponent(nome)}&imgProduto=${encodeURIComponent(imagem)}&descProduto=${encodeURIComponent(descricao)}`;
-            window.open(url, "_blank", "widht=800,height=700")
-        }
+            function abrirDetalhes(nome, imagem, descricao) {
+                const url = `pop_produtos.html?nomeProduto=${encodeURIComponent(nome)}&imgProduto=${encodeURIComponent(imagem)}&descProduto=${encodeURIComponent(descricao)}`;
+                window.open(url, "_blank", "width=800, height=700");
+            }
     </script>
 </head>
 <body>
@@ -25,14 +26,11 @@
                     <ul>
                         <li><a href="../index.html">Home</a></li>
                         <li><a href="./catalogo.html">Catálogo</a></li>
-                        <li><a href="./telas/contato.html">Contato</a></li>
+                        <li><a href="./contato.html">Contato</a></li>
                     </ul>
                 </nav>
             </div>
     </header> 
-        <div>
-            <img src="" alt="">
-        </div>
         <!--Nossos Produtos-->
         <main>
             <ul class="produtos-titulo">
@@ -54,19 +52,29 @@
             <section class="Produtos">
                 <div class="subProdutos">
                     <div class="Prod">
-                        <div class="subProd">
+                        <script>
+                            //Descrição do Produto
+                            desc_produto_camisa="Camisa polo masculina clássica na cor preta. Confeccionada em tecido confortável de alta qualidade, possui gola tradicional com fechamento por botões e ajuste ideal ao corpo, sendo a escolha perfeita para um visual casual e alinhado."
+                            sliderCamisa = ['../img/produtos/camisa.webp', '../img/home/home-produtos/nike-removebg-preview.png', '../img/produtos/celular.webp'];
+                        </script>
+                        <div class="subProd" onclick="abrirDetalhes('Camisa Polo Básica Preta',  sliderCamisa, desc_produto_camisa)">
                             <img width="200px" height="300px" src="../img/produtos/camisa.webp" alt="Camisa">
                             <div class="legenda">
                                 <div class="titulo">
-                                    <p>Camisa Polo Basica Preta</p>
+                                    <p>Camisa Polo Básica Preta</p>
                                 </div>
                                 <div class="preço">
                                     <p>R$ 119,90</p>
                                 </div>
                             </div>        
                         </div>
-                        <div class="subProd">
-                            <img width="300px" height="300px" src="..//img/produtos/celular.webp" alt="Celular">
+                        <script>
+                            //Descrição do Produto
+                            desc_produto_celular="Smartphone topo de linha com sistema de câmera tripla avançado e tela com Dynamic Island. Design elegante e minimalista com acabamento traseiro em vidro fosco escuro e laterais resistentes, unindo o máximo de tecnologia e status."
+                            sliderCelular = ['../img/produtos/celular.webp', '../img/produtos/geladeira.jpg', '../img/produtos/relogio.jpg'];
+                        </script>
+                        <div class="subProd" onclick="abrirDetalhes('Iphone 17 Pro Max Preto',  sliderCelular, desc_produto_celular)">
+                            <img width="300px" height="300px" src="../img/produtos/celular.webp" alt="Celular">
                             <div class="legenda">
                                 <div class="titulo">
                                     <p>Iphone 17 Pro Max Preto</p>
@@ -76,7 +84,12 @@
                                 </div>
                             </div>        
                         </div>
-                        <div class="subProd">
+                        <script>
+                            //Descrição do Produto
+                            desc_produto_geladeira="Refrigerador moderno em aço escovado com configuração French Door (3 portas). Conta com dispenser de água e gelo na porta superior e um freezer inferior espaçoso, ideal para quem busca alta capacidade, tecnologia e um design gourmet na cozinha."
+                            sliderGeladeira = ['../img/produtos/geladeira.jpg', '../img/produtos/armario.avif', '../img/produtos/relogio.jpg'];
+                        </script>
+                        <div class="subProd" onclick="abrirDetalhes('Geladeira Frost Free 400L',  sliderGeladeira, desc_produto_geladeira)">
                             <img width="150px" height="300px" src="../img/produtos/geladeira.jpg" alt="Geladeira">
                             <div class="legenda">
                                 <div class="titulo">
@@ -89,7 +102,12 @@
                         </div>
                     </div>
                     <div class="Prod">
-                        <div class="subProd">
+                        <script>
+                            //Descrição do Produto
+                            desc_produto_relogio="Relógio inteligente com tela quadrada touch screen de alta definição e pulseira esportiva de silicone preta. Perfeito para monitorar atividades físicas, passos, calorias e notificações do celular direto no pulso com estilo e praticidade."
+                            sliderRelogio = ['../img/produtos/relogio.jpg', '../img/produtos/camisa.webp', '../img/produtos/celular.webp'];
+                        </script>
+                        <div class="subProd" onclick="abrirDetalhes('Apple Watch Series 8',  sliderRelogio, desc_produto_relogio)">
                             <img width="150px" height="150px" src="../img/produtos/relogio.jpg" alt="Relógio">
                             <div class="legenda">
                                 <div class="titulo">
@@ -100,7 +118,12 @@
                                 </div>
                             </div>        
                         </div>
-                        <div class="subProd">
+                        <script>
+                            //Descrição do Produto
+                            desc_produto_armario="Guarda-roupa de casal amplo com 6 portas de abrir e acabamento elegante em tom off-white brilhante. Possui estrutura robusta em madeira amadeirada e puxadores verticais modernos, combinando perfeitamente organização e sofisticação para o quarto."
+                            sliderArmario = ['../img/produtos/armario.avif', '../img/produtos/celular.webp', '../img/produtos/geladeira.jpg'];
+                        </script>
+                        <div class="subProd" onclick="abrirDetalhes('Armario',  sliderArmario, desc_produto_armario)">
                             <img width="300px" height="150px" src="../img/produtos/armario.avif" alt="Teclado">
                             <div class="legenda">
                                 <div class="titulo">
@@ -113,10 +136,10 @@
                         </div>
                         <script>
                             //Descrição do Produto
-                            desc_produto="Este é um dos nossos tenis que está disponivel para venda nq Casas Bahia. Nova geração de amortecimento de mola com uma camada extra de proteção na sola do tenis. Com ele é possível realizar atividades fisícas, ir trabalhar e até para ocasiões mais refinadas."
-                            slider = ['../img/nike.webp', '../img/teclado.jpg', '../img/micro-ondas.webp', '../img/mochila.jpg', '../img/mouse.jpg'];
+                            desc_produto_tenis="Este é um dos nossos tenis que está disponivel para venda nq Casas Bahia. Nova geração de amortecimento de mola com uma camada extra de proteção na sola do tenis. Com ele é possível realizar atividades fisícas, ir trabalhar e até para ocasiões mais refinadas. Acompanho disso, temos junto, outros produtos que podem ser adiquiros."
+                            sliderTenis = ['../img/home/home-produtos/nike-removebg-preview.png', '../img/produtos/camisa.webp', '../img/produtos/armario.avif'];
                         </script>
-                        <div class="subProd" onclick="abrirDetalhes('Tenis Nike Initiator', slider, desc_produto)">
+                        <div class="subProd" onclick="abrirDetalhes('Tenis Nike Initiator',  sliderTenis, desc_produto_tenis)">
                             <img width="150px" height="150px" src="../img/home/home-produtos/nike-removebg-preview.png" alt="Nike">
                             <div class="legenda">
                                 <div class="titulo">

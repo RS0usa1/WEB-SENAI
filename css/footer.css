@@ -1,0 +1,23 @@
+/* FOOTER */
+footer{
+    padding: 15px 5px 5px 0;
+    background-color: #0042D5;
+    background-color: black(0,0,0,0.6);
+    background-blend-mode: darken;
+}
+
+footer p{
+    color: white;
+    text-align: right;
+    font-size: 20px;
+}
+
+footer a{
+    color: white;
+    text-decoration: none;
+}
+
+.logo_footer{
+    width: 8%;
+    padding-left: 85%;
+}

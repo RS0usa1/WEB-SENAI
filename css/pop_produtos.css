@@ -7,29 +7,40 @@ body{
     font-family: "Montserrat", sans-serif;
 }
 
-section{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-}
-
-.Card{
-    width: 100%;
-    display: flex;
-    object-position: center;
-    justify-content: center;
-    text-align: left;
-}
-
-.pagina_prod img {
-    width: 700px;
-    height: 680px;
-    padding: 20px;
-}
-
-.pagina_prod p{
-    font-size: 20px;
-    padding: 10px;
-    width: 80%;
+.pop{
     margin: 0;
+}
+
+.pop h1{
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    color: rgb(26, 31, 90);
+}
+
+.slider{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.slider button{
+    width: 35px;
+    height: 35px;
+    border: none;
+    border-radius: 20px;
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+
+.slider img{
+    width: 600px;
+    height: 500px;
+    padding-left: 5%;
+}
+
+.pop p{
+    padding: 2% 0 9% 7%;
+    margin: 0;
+    white-space: pre-line;
 }
